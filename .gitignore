@@ -1,3 +1,43 @@
 _config.butterfly copy.yml
 _config.butterfly copy 3.yml
 _config.butterfly copy 2.yml
+public/
+.deploy*/
+node_modules/
+db.json
+*.log
+# 依赖和缓存
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 生成的静态文件
+public/
+.deploy*/
+
+# 数据库和日志
+db.json
+*.log
+
+# 编辑器/IDE 配置
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 环境配置
+.env
+.env.development
+.env.production
+
+# 主题自定义配置（可选，若主# Hexo 通用忽略
+node_modules/
+hexo-org-cache/
+public/
+db.json
+
+# 冗余配置（按需）
+_config.butterfly copy 3.yml
