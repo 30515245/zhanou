@@ -1,0 +1,26 @@
+- author: Butterfly  # 作者名称
+  avatar: https://blogtc.30515245.xyz/20250612142104764.png  # 头像链接
+  date: 2024-06-21 23:33:26  # 日期时间
+  key: key-1  # 唯一标识
+  content: |
+    This is a sample content for **Author 1**.  # 内容
+    ![Sample Image]https://blogtc.30515245.xyz/20250613145055320.webp)  # 示例图片
+  tags:
+    - tags1  # 标签1
+    - tags2  # 标签2
+- author: Butterfly  # 作者名称
+  avatar: https://blogtc.30515245.xyz/20250612142104764.png  # 头像链接
+  date: 2024-06-20 23:33:26  # 日期时间
+  key: key-2  # 唯一标识
+  content: |
+    This is a sample content for **Author 2**.  # 内容
+    ![Sample Image](https://blogtc.30515245.xyz/20250613185304571.webp)  # 示例图片
+  tags:
+    - tag2  # 标签2
+    - tag3  # 标签3
+- author: Butterfly  # 作者名称
+  avatar: https://butterfly.js.org/img/avatar.png  # 头像链接
+  date: 2024-06-19 23:33:26  # 日期时间
+  key: key-3  # 唯一标识
+  content: |
+    这是一段示例内容，用于 **作者 3**.  # 内容

@@ -1,0 +1,24 @@
+- random: true  # 隨機顯示鏈接
+  class_name: 友情鏈接  # 鏈接分類名稱：友情鏈接
+  class_desc: 那些人，那些事  # 該分類的描述：那些人，那些事
+  link_list:
+    - name: Hexo  # 鏈接名稱：Hexo
+      link: https://hexo.io/zh-tw/  # Hexo 網站的鏈接
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg  # Hexo 的頭像圖片鏈接
+      descr: 快速、簡單且強大的網誌框架  # 對 Hexo 的描述
+
+- class_name: 網站  # 鏈接分類名稱：網站
+  class_desc: 值得推薦的網站  # 該分類的描述：值得推薦的網站
+  link_list:
+    - name: Youtube  # 鏈接名稱：Youtube
+      link: https://www.youtube.com/  # Youtube 網站的鏈接
+      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png  # Youtube 的頭像圖片鏈接
+      descr: 視頻網站  # 對 Youtube 的描述
+    - name: Weibo  # 鏈接名稱：Weibo
+      link: https://www.weibo.com/  # Weibo 網站的鏈接
+      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png  # Weibo 的頭像圖片鏈接
+      descr: 中國最大社交分享平台  # 對 Weibo 的描述
+    - name: Twitter  # 鏈接名稱：Twitter
+      link: https://twitter.com/  # Twitter 網站的鏈接
+      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png  # Twitter 的頭像圖片鏈接
+      descr: 社交分享平台  # 對 Twitter 的描述

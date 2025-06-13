@@ -1,0 +1,127 @@
+# Hexo 配置
+## 文档: https://hexo.io/docs/configuration.html
+## 源码: https://github.com/hexojs/hexo/
+
+# 站点 # 站点相关配置
+title: 零碳时代 # 站点的标题
+subtitle: '产业新能源' # 站点的副标题
+description: '产业新能源' # 站点的描述信息
+keywords: 产业新能源 # 站点的关键词
+author: 零碳时代 # 文章作者姓名
+language: zh-CN  # 站点使用的语言
+timezone: '' # 站点所在时区
+# URL
+## 在此设置您的站点网址。例如，如果您使用 GitHub 页面，请将 url 设置为 'https://username.github.io/project'
+url: https://blog.30515245.xyz # 站点的网址
+permalink: :year/:month/:day/:title/ # 文章永久链接的格式
+permalink_defaults: # 永久链接的默认设置
+pretty_urls: # 漂亮链接的设置
+  trailing_index: true # 设为 false 可从永久链接中移除尾部的 'index.html'
+  trailing_html: true # 设为 false 可从永久链接中移除尾部的 '.html'
+
+# 目录设置
+source_dir: source # 源文件目录
+public_dir: public # 生成的静态文件目录
+tag_dir: tags # 标签页目录
+archive_dir: archives # 归档页目录
+category_dir: categories # 分类页目录
+code_dir: downloads/code # 代码下载目录
+i18n_dir: :lang # 多语言目录
+skip_render: # 跳过渲染的文件或目录
+
+# 写作设置
+new_post_name: :title.md # 新文章的文件名格式
+default_layout: post # 默认文章布局
+titlecase: false # 是否将标题转换为标题格式
+external_link:
+  enable: true # 是否在新标签页打开外部链接
+  field: site # 应用范围，设置为整个站点
+  exclude: '' # 排除的链接
+filename_case: 0 # 文件名大小写处理方式
+render_drafts: false # 是否渲染草稿文章
+post_asset_folder: false # 是否启用文章资源文件夹
+relative_link: false # 是否使用相对链接
+future: true # 是否显示未来的文章
+syntax_highlighter: highlight.js # 语法高亮工具
+highlight:
+  line_number: true # 是否显示行号
+  auto_detect: false # 是否自动检测代码语言
+  tab_replace: '' # 制表符替换内容
+  wrap: true # 是否包裹代码块
+  hljs: false # 是否使用 highlight.js 的新语法高亮
+prismjs:
+  preprocess: true # 是否预处理代码
+  line_number: true # 是否显示行号
+  tab_replace: '' # 制表符替换内容
+
+# 首页设置
+# path: 博客首页的根路径。(默认 = '')
+# per_page: 每页显示的文章数量。(0 = 禁用分页)
+# order_by: 文章排序方式。(默认按日期降序排序)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# 分类与标签设置
+default_category: uncategorized # 默认分类
+category_map: # 分类映射
+tag_map: # 标签映射
+
+# 元数据元素
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true # 是否生成 meta 标签
+
+# 日期/时间格式设置
+## Hexo 使用 Moment.js 解析和显示日期
+## 您可以按照以下文档自定义日期格式
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD # 日期格式
+time_format: HH:mm:ss # 时间格式
+## updated_option 支持 'mtime', 'date', 'empty'
+updated_option: 'mtime' # 更新时间选项
+
+# 分页设置
+## 将 per_page 设置为 0 可禁用分页
+per_page: 10 # 每页显示的文章数量
+pagination_dir: page # 分页目录
+
+# 包含/排除文件设置
+## include:/exclude: 选项仅适用于 'source/' 文件夹
+include: # 包含的文件或目录
+exclude: # 排除的文件或目录
+ignore: # 忽略的文件或目录
+
+# 扩展设置
+## 插件: https://hexo.io/plugins/
+## 主题: https://hexo.io/themes/
+theme: butterfly # 使用的主题
+
+# 部署设置
+## 文档: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: '' # 部署类型
+
+search:
+  path: search.json # 搜索文件路径
+  field: post # 搜索范围
+  content: true # 是否搜索文章内容
+  format: striptags # 搜索内容格式
+
+aplayer:
+  script_dir: some/place                        # 公共目录下脚本文件所在路径，默认: 'assets/js'
+  style_dir: some/place                         # 公共目录下样式文件所在路径，默认: 'assets/css'
+  cdn: http://xxx/aplayer.min.js                # 引用 APlayer.js 的外部 CDN 地址 (默认不开启)
+  style_cdn: http://xxx/aplayer.min.css         # 引用 APlayer.css 的外部 CDN 地址 (默认不开启)
+  meting: true                                  # 是否支持 MetingJS
+  meting_api: http://xxx/api.php                # 自定义 Meting API 地址
+  meting_cdn: http://xxx/Meing.min.js           # 引用 Meting.js 的外部 CDN 地址 (默认不开启)
+  asset_inject: true                            # 自动注入 Aplayer.js 与 Meting.js 资源脚本，默认开启
+  externalLink: http://xxx/aplayer.min.js       # 老版本参数，功能与 cdn 参数相同
+
+# Cloudflare Analytics
+# https://www.cloudflare.com/zh-tw/web-analytics/
+cloudflare_analytics: |
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "be171c5e82a24b278c2200b69bd7c3ae"}'></script>
+  <!-- End Cloudflare Web Analytics -->

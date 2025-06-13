@@ -1,0 +1,639 @@
+# 主题配置说明
+# 若有任何疑问，请参考文档
+# 中文文档: https://butterfly.js.org/
+# 英文文档: https://butterfly.js.org/en/
+
+# 导航设置
+nav:
+  logo: https://blogtc.30515245.xyz/20250612142104764.png  # 导航栏 logo 图片
+  display_title: true  # 显示标题
+  fixed: false  # 固定导航栏
+
+menu:
+  首页: / || fas fa-home 
+  置顶||fas fa-book:
+    新能源: /2025/06/12/new-energy-origin/ || fas fa-bolt
+    新基建: /2025/06/13/New-infrastructure/ || fas fa-building
+    未来基建: /2025/06/10/Future-infrastructure/ || fas fa-rocket
+  页面||fas fa-folder:
+    归档: /archives/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open
+    图库: /gallery/ || fas fa-images
+    说说: /shuoshuo/ || fas fa-comment
+    友链: /link/ || fas fa-link
+  关于: /about/ || fas fa-user
+  留言板: /message/ || fas fa-comments
+
+# 代码块设置
+code_blocks:
+  theme: light  # 代码块主题为浅色
+  macStyle: false  # 不启用 Mac 风格
+  height_limit: false  # 不限制代码块高度
+  word_wrap: false  # 不启用代码换行
+  copy: true  # 启用复制功能
+  language: true  # 显示语言
+  shrink: false  # 展开代码块
+  fullpage: false  # 不启用全屏功能
+
+# 社交媒体链接
+social:
+  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
+  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+
+# 图片设置
+favicon: /img/favicon.ico  # 网站图标
+avatar:
+  img: https://blogtc.30515245.xyz/20250612142104764.png  # 头像图片
+  effect: false  # 不启用头像特效
+disable_top_img: false  # 不禁用横幅图片
+default_top_img: 'linear-gradient(135deg, #7abf18 0%, #4c8c4a 50%, #1b5e20 100%)'  # 默认横幅图片
+index_img: 'linear-gradient(135deg, #7abf18 0%, #4c8c4a 50%, #1b5e20 100%)'  # 首页横幅图片
+top_img:   # 首页顶部横幅图片
+  # bottom_img: 'linear-gradient(20deg, #81C784, #43A047, #2E7D32, #1B5E20)'
+archive_img: 'linear-gradient(135deg, #7abf18 0%, #4c8c4a 50%, #1b5e20 100%)'  # 归档页面横幅图片
+tag_img: 'linear-gradient(135deg, #7abf18 0%, #4c8c4a 50%, #1b5e20 100%)'  # 标签页横幅图片
+tag_per_img: 'linear-gradient(135deg, #7abf18 0%, #4c8c4a 50%, #1b5e20 100%)'  # 各标签页横幅图片
+category_img: 'linear-gradient(135deg, #7abf18 0%, #4c8c4a 50%, #1b5e20 100%)'  # 分类页横幅图片
+category_per_img: 'linear-gradient(135deg, #7abf18 0%, #4c8c4a 50%, #1b5e20 100%)'  # 各分类页横幅图片
+footer_img: true  # 不设置页脚背景图片
+background: 'linear-gradient(225deg, #7abf18 0%, #2ecc71 30%, #3498db 70%, #9b59b6 100%)'  # 网站背景
+cover:
+  index_enable: true  # 首页启用封面
+  aside_enable: true  # 侧边栏启用封面
+  archives_enable: true  # 归档页启用封面
+  default_cover: https://blogtc.30515245.xyz/20250613104116053.png  # 当封面未设置时，显示默认封面
+
+error_img:
+  flink: /img/friend_404.gif  # 友链页破损图片替换
+  post_page: /img/404.jpg  # 文章页破损图片替换
+error_404:
+  enable: true  # 启用 404 页面
+  subtitle: 'Page Not Found'  # 404 页面副标题
+  background: /img/error-page.png  # 404 页面背景图片
+
+# 文章元数据设置
+post_meta:
+  page:
+    date_type: created  # 显示文章创建日期
+    date_format: date  # 日期格式为具体日期
+    categories: true  # 显示分类
+    tags: false  # 不显示标签
+    label: true  # 显示标签
+  post:
+    position: left  # 文章元数据位置在左侧
+    date_type: both  # 显示文章创建和更新日期
+    date_format: date  # 日期格式为具体日期
+    categories: true  # 显示分类
+    tags: true  # 显示标签
+    label: true  # 显示标签
+
+# 首页设置
+index_site_info_top:  # 首页站点信息顶部位置
+index_top_img_height:  # 首页顶部图片高度
+subtitle:
+  enable: true  # 启用副标题功能，当前为启用状态
+  effect: true  # 启用打字机效果
+  typed_option:
+    typeSpeed: 60  # 打字速度（毫秒/字符）
+    backSpeed: 30  # 退格速度（毫秒/字符）
+    loop: true  # 循环播放（必须小写，YAML 对大小写敏感！）
+    cursorChar: '|'  # 光标字符
+    smartBackspace: true  # 智能退格
+  source: false  # 选择副标题来源，当前为禁用第三方来源
+  sub:
+    - 产业新能源
+    - 能源革命的新时代
+    - 构建
+    - 新能源+数字基建+未来基建  # 副标题内容
+index_layout: 3  # 选择首页文章布局方式，当前为封面和信息左右交替
+index_post_content: 
+  method: false  # 显示方式：1 - 描述；2 - 两者皆有（若描述存在则显示描述，否则显示自动摘要）；3 - 自动摘要
+  length: 500  # 自动摘要的长度
+
+# 文章设置
+toc:
+  post: true  # 文章显示目录
+  page: false  # 页面不显示目录
+  number: true  # 目录显示编号
+  expand: false  # 目录不展开
+  style_simple: false  # 目录不使用简单样式
+  scroll_percent: true  # 显示滚动百分比
+post_copyright:
+  enable: true  # 启用文章版权声明
+  decode: false  # 不进行解码
+  author_href:  # 作者链接
+  license: CC BY-NC-SA 4.0  # 版权协议
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/  # 版权协议链接
+reward:
+  enable: false  # 不启用赞助/打赏功能
+  text:  # 赞助/打赏文字说明
+  QR_code:
+    # - img: /img/wechat.jpg
+    #   link:
+    #   text: wechat
+    # - img: /img/alipay.jpg
+    #   link:
+    #   text: alipay
+post_edit:
+  enable: false  # 不启用文章编辑功能
+  url:  # 文章编辑链接
+related_post:
+  enable: true  # 启用相关文章功能
+  limit: 6  # 显示 6 篇相关文章
+  date_type: created  # 按文章创建日期排序
+post_pagination: 1  # '下一篇' 链接到旧文章
+noticeOutdate:
+  enable: false  # 不启用文章过期通知
+  style: flat  # 过期通知样式为扁平风格
+  limit_day: 365  # 文章更新超过 365 天显示通知
+  position: top  # 过期通知显示在顶部
+  message_prev: It has been  # 过期通知前半部分信息
+  message_next: days since the last update, the content of the article may be outdated.  # 过期通知后半部分信息
+
+# 页脚设置
+footer:
+  nav:  # 页脚导航
+  owner:
+    enable: true  # 启用页脚所有者信息
+    since: 2025  # 建站年份
+  copyright:
+    enable: false  # 启用版权信息
+    theme: butterfly  # 主题名称
+    framework: butterfly.js  # 框架名称
+    version: false  # 显示版本信息
+  custom_text: 欢的来到零碳时代  # 自定义页脚文字
+
+# 侧边栏设置
+aside:
+  enable: true  # 启用侧边栏
+  hide: false  # 不隐藏侧边栏
+  button: true  # 显示隐藏侧边栏按钮
+  mobile: true  # 移动端显示侧边栏
+  position: right  # 侧边栏位置在右侧
+  display:
+    archive: true  # 显示归档模块
+    tag: true  # 显示标签模块
+    category: true  # 显示分类模块
+  card_author:
+    enable: true  # 启用作者卡片
+    description:  # 作者描述
+    button:
+      enable: true  # 启用作者卡片按钮
+      icon: fab fa-movement  # 按钮图标
+      text: 跟我来  # 按钮文字
+      link: https://bps.30515245.xyz  # 按钮链接
+  card_announcement:
+    enable: true  # 启用公告卡片
+    content: 欢迎来到零碳时代  # 公告内容
+  card_recent_post:
+    enable: true  # 启用最近文章卡片
+    limit: 5  # 显示 5 篇最近文章
+    sort: date  # 按文章创建日期排序
+    sort_order:  # 排序顺序
+  card_newest_comments:
+    enable: false  # 不启用最新评论卡片
+    sort_order:  # 排序顺序
+    limit: 6  # 显示 6 条最新评论
+    storage: 10  # 数据保存 10 分钟
+    avatar: true  # 显示评论者头像
+  card_categories:
+    enable: true  # 启用分类卡片
+    limit: 8  # 显示 8 个分类
+    expand: none  # 分类不展开
+    sort_order:  # 排序顺序
+  card_tags:
+    enable: true  # 启用标签卡片
+    limit: 38  # 显示 40 个标签
+    color: false  # 标签不显示颜色
+    orderby: random  # 标签随机排序
+    order: 1  # 升序排序
+    sort_order:  # 排序顺序
+  card_archives:
+    enable: true  # 启用归档卡片
+    type: monthly  # 按月归档
+    format: MMMM YYYY  # 归档日期格式
+    order: -1  # 降序排序
+    limit: 8  # 显示 8 个归档
+    sort_order:  # 排序顺序
+  card_post_series:
+    enable: true  # 启用文章系列卡片
+    series_title: false  # 标题不显示系列名称
+    orderBy: 'date'  # 按文章日期排序
+    order: -1  # 降序排序
+  card_webinfo:
+    enable: true  # 启用网站信息卡片
+    post_count: true  # 显示文章总数
+    last_push_date: true  # 显示最后推送日期
+    sort_order:  # 排序顺序
+    runtime_date:  # 网站运行时间
+
+# 右下角按钮设置
+rightside_bottom:  # 右下角按钮底部距离
+translate:
+  enable: false  # 不启用繁简中文转换
+  default: 简  # 默认按钮文字
+  defaultEncoding: 2  # 网站语言为简体中文
+  translateDelay: 0  # 转换无延迟
+  msgToTraditionalChinese: '繁'  # 切换到繁体中文时按钮文字
+  msgToSimplifiedChinese: '簡'  # 切换到简体中文时按钮文字
+readmode: true  # 启用阅读模式
+darkmode:
+  enable: true  # 启用黑暗模式
+  button: true  # 显示切换按钮
+  autoChangeMode: false  # 不自动切换模式
+  start:  # 明亮模式开始时间
+  end:  # 明亮模式结束时间
+rightside_scroll_percent: false  # 不显示滚动百分比
+rightside_item_order:
+  enable: false  # 不启用右下角按钮排序
+  hide:  # 隐藏的按钮
+  show:  # 显示的按钮
+rightside_config_animation: true  # 启用右下角配置按钮动画
+
+# 全局设置
+anchor:
+  auto_update: false  # 滚动时不更新 URL
+  click_to_scroll: false  # 点击标题不滚动并更新锚点
+photofigcaption: false  # 不启用图片标题
+copy:
+  enable: true  # 启用复制功能
+  copyright:
+    enable: false  # 不启用复制版权信息
+    limit_count: 150  # 复制字数限制
+wordcount:
+  enable: true  # 不启用字数统计
+  post_wordcount: true  # 显示文章字数
+  min2read: true  # 显示阅读时间
+  total_wordcount: true  # 显示网站总字数
+busuanzi:
+  site_uv: true  # 显示网站 UV 统计
+  site_pv: true  # 显示网站 PV 统计
+  page_pv: true  # 显示页面 PV 统计
+
+# 数学公式设置
+math:
+  use:  # 选择数学公式渲染引擎
+  per_page: true  # 每个页面加载数学公式脚本
+  hide_scrollbar: false  # 不隐藏滚动条
+  mathjax:
+    enableMenu: true  # 启用 MathJax 上下文菜单
+    tags: none  # 方程不编号
+  katex:
+    copy_tex: false  # 不启用复制 KaTeX 公式
+
+# 搜索设置
+search:
+  use: local_search  # 选择搜索引擎
+  placeholder:  # 搜索框占位符
+  algolia_search:
+    hitsPerPage: 6  # 每页显示 6 条搜索结果
+  local_search:
+    preload: false  # 不预加载搜索数据
+    top_n_per_article: 1  # 每篇文章显示 1 条结果
+    unescape: false  # 不进行 html 字符串转义
+    CDN:  # 本地搜索 CDN 链接
+  docsearch:
+    appId:  # Docsearch 应用 ID
+    apiKey:  # Docsearch API 密钥
+    indexName:  # Docsearch 索引名称
+    option:  # Docsearch 选项
+
+# 分享系统设置
+share:
+  use: sharejs  # 选择 Share.js 分享系统
+  sharejs:
+    sites: facebook,twitter,wechat,weibo,qq  # Share.js 分享站点
+  addtoany:
+    item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link  # AddToAny 分享项
+
+# 评论系统设置
+comments:
+  use: Valine  # 选择评论系统
+  text: true  # 显示评论名称
+  lazyload: false  # 不启用评论系统懒加载
+  count: false  # 不显示文章顶部图片评论计数
+  card_post_count: false  # 不显示首页评论计数
+disqus:
+  shortname:  # Disqus 短名称
+  apikey:  # Disqus API 密钥
+disqusjs:
+  shortname:  # DisqusJS 短名称
+  apikey:  # DisqusJS API 密钥
+  option:  # DisqusJS 选项
+livere:
+  uid:  # Livere 用户 ID
+gitalk:
+  client_id:  # Gitalk 客户端 ID
+  client_secret:  # Gitalk 客户端密钥
+  repo:  # Gitalk 仓库名称
+  owner:  # Gitalk 仓库所有者
+  admin:  # Gitalk 管理员
+  option:  # Gitalk 选项
+valine:
+  appId: QvInG0iJAXI8Vr3CdLsUwRo5-gzGzoHsz  # Valine 应用 ID
+  appKey: xriETHbw2vAcKhnyCeqYmR9Y  # Valine 应用密钥
+  avatar: monsterid  # Valine 头像样式
+  serverURLs: https://qving0ij.lc-cn-n1-shared.com  # Valine 服务器地址
+  bg:  # Valine 背景
+  visitor: false  # 不使用 Valine 访客计数
+  option:
+    placeholder: 请留言，记得填写昵称和邮箱
+    emojiCDN: 
+    emojiMaps:
+waline:
+  serverURL:  # Waline 服务器地址
+  bg:  # Waline 背景
+  pageview: false  # 不使用 Waline 页面浏览量计数
+  option:  # Waline 选项
+utterances:
+  repo:  # Utterances 仓库名称
+  issue_term: pathname  # 问题映射方式为路径名
+  light_theme: github-light  # 浅色主题
+  dark_theme: photon-dark  # 深色主题
+  js:  # Utterances JavaScript 链接
+  option:  # Utterances 选项
+facebook_comments:
+  app_id:  # Facebook 应用 ID
+  user_id:  # Facebook 用户 ID
+  pageSize: 10  # 每页显示 10 条评论
+  order_by: social  # 按社交排序
+  lang: en_US  # 评论语言为英语
+twikoo:
+  envId:  # Twikoo 环境 ID
+  region:  # Twikoo 区域
+  visitor: false  # 不使用 Twikoo 访客计数
+  option:  # Twikoo 选项
+giscus:
+  repo:  # Giscus 仓库名称
+  repo_id:  # Giscus 仓库 ID
+  category_id:  # Giscus 分类 ID
+  light_theme: light  # 浅色主题
+  dark_theme: dark  # 深色主题
+  js:  # Giscus JavaScript 链接
+  option:  # Giscus 选项
+remark42:
+  host:  # Remark42 主机地址
+  siteId:  # Remark42 站点 ID
+  option:  # Remark42 选项
+artalk:
+  server:  # Artalk 服务器地址
+  site:  # Artalk 站点名称
+  visitor: false  # 不使用 Artalk 访客计数
+  option:  # Artalk 选项
+
+# 聊天服务设置
+chat:
+  use: chatra  # 选择聊天服务
+  rightside_button: true  # 不显示右下角聊天按钮
+  button_hide_show: true  # 不启用聊天按钮隐藏显示功能
+chatra:
+  id:  # Chatra ID
+tidio:
+  public_key:  # Tidio 公钥
+crisp:
+  website_id:  # Crisp 网站 ID
+
+# 分析设置
+baidu_analytics:  # 百度统计 ID
+google_analytics:  # Google 分析 ID
+cloudflare_analytics:  # Cloudflare 分析 ID
+microsoft_clarity:  # Microsoft Clarity ID
+umami_analytics:
+  enable: false  # 不启用 Umami 分析
+  serverURL:  # Umami 服务器地址
+  website_id:  # Umami 网站 ID
+  option:  # Umami 选项
+  UV_PV:
+    site_uv: false  # 不显示网站 UV 统计
+    site_pv: false  # 不显示网站 PV 统计
+    page_pv: false  # 不显示页面 PV 统计
+    token:  # Umami 令牌
+google_tag_manager:
+  tag_id:  # Google 标签管理器 ID
+  domain:  # Google 标签管理器域名
+
+# 广告设置
+google_adsense:
+  enable: false  # 不启用 Google Adsense
+  auto_ads: true  # 启用自动广告
+  js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js  # Google Adsense JavaScript 链接
+  client:  # Google Adsense 客户端 ID
+  enable_page_level_ads: true  # 启用页面级广告
+ad:
+  index:  # 首页广告代码
+  aside:  # 侧边栏广告代码
+  post:  # 文章广告代码
+
+# 验证设置
+site_verification:
+  # - name: google-site-verification
+  #   content: xxxxxx
+  # - name: baidu-site-verification
+  #   content: xxxxxxx
+
+# 美化 / 效果设置
+category_ui:  # 分类页面 UI 设置
+tag_ui:  # 标签页面 UI 设置
+rounded_corners_ui: true  # 启用 UI 元素圆角
+text_align_justify: false  # 不启用文本两端对齐
+mask:
+  header: true  # 为页眉添加遮罩
+  footer: true  # 为页脚添加遮罩
+preloader:
+  enable: false  # 不启用加载动画
+  source: 1  # 加载动画来源为全屏加载动画
+  pace_css_url:  # pace 主题 CSS 链接
+enter_transitions: true  # 启用页面过渡动画
+display_mode: light  # 默认显示模式为浅色模式
+beautify:
+  enable: false  # 不启用文章内容美化
+  field: post  # 美化文章字段
+  title_prefix_icon:  # 标题前缀图标
+  title_prefix_icon_color:  # 标题前缀图标颜色
+font:
+  global_font_size:  # 全局字体大小
+  code_font_size:  # 代码字体大小
+  font_family:  # 全局字体族
+  code_font_family:  # 代码字体族
+blog_title_font:
+  font_link:  # 网站标题字体链接
+  font_family:  # 网站标题字体族
+hr_icon:
+  enable: true  # 启用分隔线图标
+  icon:  # 分隔线图标
+  icon_top:  # 分隔线图标顶部位置
+activate_power_mode:
+  enable: false  # 不启用打字机效果
+  colorful: true  # 打字机效果颜色丰富
+  shake: true  # 打字机效果有震动
+  mobile: false  # 移动端不启用打字机效果
+canvas_ribbon:
+  enable: false  # 不启用 canvas 丝带效果
+  size: 150  # 丝带大小为 150
+  alpha: 0.6  # 丝带透明度为 0.6
+  zIndex: -1  # 丝带 z-index 为 -1
+  click_to_change: false  # 点击不改变丝带效果
+  mobile: false  # 移动端不启用 canvas 丝带效果
+canvas_fluttering_ribbon:
+  enable: false  # 不启用飘动的丝带效果
+  mobile: false  # 移动端不启用飘动的丝带效果
+canvas_nest:
+  enable: false  # 不启用 canvas 嵌套效果
+  color: '0,0,255'  # 线条颜色为蓝色
+  opacity: 0.7  # 线条透明度为 0.7
+  zIndex: -1  # 背景 z-index 为 -1
+  count: 99  # 线条数量为 99
+  mobile: false  # 移动端不启用 canvas 嵌套效果
+fireworks:
+  enable: false  # 不启用鼠标点击烟花效果
+  zIndex: 9999  # 烟花 z-index 为 9999
+  mobile: false  # 移动端不启用鼠标点击烟花效果
+click_heart:
+  enable: false  # 不启用鼠标点击心形效果
+  mobile: false  # 移动端不启用鼠标点击心形效果
+clickShowText:
+  enable: false  # 不启用鼠标点击显示文字效果
+  fontSize: 15px  # 文字大小为 15px
+  random: false  # 文字不随机显示
+  mobile: false  # 移动端不启用鼠标点击显示文字效果
+
+# 灯箱设置
+lightbox:  # 选择灯箱插件
+
+# 标签插件设置
+series:
+  enable: false  # 不启用系列功能
+  orderBy: 'title'  # 按标题排序
+  order: 1  # 升序排序
+  number: true  # 显示系列编号
+abcjs:
+  enable: false  # 不启用 ABCJS 插件
+  per_page: true  # 每个页面加载 ABCJS 插件
+mermaid:
+  enable: false  # 不启用 Mermaid 插件
+  code_write: false  # 不使用代码块编写 Mermaid 图表
+  theme:
+    light: default  # 浅色主题为默认主题
+    dark: dark  # 深色主题为深色主题
+chartjs:
+  enable: false  # 不启用 Chart.js 插件
+  fontColor:
+    light: 'rgba(0, 0, 0, 0.8)'  # 浅色模式下图表字体颜色
+    dark: 'rgba(255, 255, 255, 0.8)'  # 深色模式下图表字体颜色
+  borderColor:
+    light: 'rgba(0, 0, 0, 0.1)'  # 浅色模式下图表边框颜色
+    dark: 'rgba(255, 255, 255, 0.2)'  # 深色模式下图表边框颜色
+  scale_ticks_backdropColor:
+    light: 'transparent'  # 浅色模式下刻度标签背景颜色
+    dark: 'transparent'  # 深色模式下刻度标签背景颜色
+note:
+  style: flat  # 笔记标签样式为扁平风格
+  icons: true  # 显示笔记标签图标
+  border_radius: 3  # 笔记标签边框圆角半径为 3
+  light_bg_offset: 0  # 背景较浅偏移量为 0
+
+# 其他设置
+pjax:
+  enable: false  # 不启用 Pjax
+  exclude:
+    # - /xxxxxx/
+aplayerInject:
+  enable: false  # 不启用 aplayer/meting 注入
+  per_page: true  # 每个页面注入 aplayer/meting
+snackbar:
+  enable: false  # 不启用 Snackbar 通知
+  position: bottom-left  # Snackbar 通知位置在左下角
+  bg_light: '#49b1f5'  # 浅色模式下 Snackbar 背景颜色
+  bg_dark: '#1f1f1f'  # 深色模式下 Snackbar 背景颜色
+instantpage: false  # 不启用 Instant.page
+lazyload:
+  enable: false  # 不启用懒加载
+  field: site  # 全站启用懒加载
+  placeholder:  # 懒加载占位符
+  blur: false  # 懒加载不启用模糊效果
+pwa:
+  enable: false  # 不启用 PWA
+  manifest:  # PWA 清单文件
+  apple_touch_icon:  # PWA 苹果触摸图标
+  favicon_32_32:  # 32x32 图标
+  favicon_16_16:  # 16x16 图标
+  mask_icon:  # PWA 遮罩图标
+Open_Graph_meta:
+  enable: true  # 启用 Open graph 元标签
+  option:
+    # twitter_card:
+    # twitter_image:
+    # twitter_id:
+    # twitter_site:
+    # google_plus:
+    # fb_admins:
+    # fb_app_id:
+structured_data: true  # 启用结构化数据
+css_prefix: true  # 启用 CSS 前缀
+inject:
+  head:
+    # - <link rel="stylesheet" href="/xxx.css">
+  bottom:
+    # - <script src="xxxx"></script>
+CDN:
+  internal_provider: local  # 内部脚本 CDN 提供商为本地
+  third_party_provider: jsdelivr  # 第三方脚本 CDN 提供商为 jsdelivr
+  version: false  # 不添加版本号
+  custom_format:  # 自定义 CDN 格式
+  option:
+    # abcjs_basic_js: # ABCJS 基础 JavaScript 文件
+    # activate_power_mode: # 激活强力模式
+    # algolia_js: # Algolia JavaScript 文件
+    # algolia_search: # Algolia 搜索功能
+    # aplayer_css: # APlayer 样式表文件
+    # aplayer_js: # APlayer JavaScript 文件
+    # artalk_css: # Artalk 样式表文件
+    # artalk_js: # Artalk JavaScript 文件
+    # blueimp_md5: # Blueimp MD5 库
+    # busuanzi: # 不蒜子统计
+    # canvas_fluttering_ribbon: # 画布飘动丝带效果
+    # canvas_nest: # 画布嵌套效果
+    # canvas_ribbon: # 画布丝带效果
+    # chartjs: # Chart.js 图表库
+    # click_heart: # 点击爱心效果
+    # clickShowText: # 点击显示文本效果
+    # disqusjs: # DisqusJS 评论系统
+    # disqusjs_css: # DisqusJS 样式表文件
+    # docsearch_css: # DocSearch 样式表文件
+    # docsearch_js: # DocSearch JavaScript 文件
+    # egjs_infinitegrid: # EGJS 无限网格库
+    # fancybox: # FancyBox 图片查看器
+    # fancybox_css: # FancyBox 样式表文件
+    # fireworks: # 烟花效果
+    # fontawesome: # Font Awesome 图标库
+    # gitalk: # Gitalk 评论系统
+    # gitalk_css: # Gitalk 样式表文件
+    # giscus: # Giscus 评论系统
+    # instantpage: # InstantPage 快速页面加载
+    # instantsearch: # 即时搜索功能
+    # katex: # KaTeX 数学公式渲染库
+    # katex_copytex: # KaTeX 复制公式功能
+    # lazyload: # 懒加载功能
+    # local_search: # 本地搜索功能
+    # main: # 主 JavaScript 文件
+    # main_css: # 主样式表文件
+    # mathjax: # MathJax 数学公式渲染库
+    # medium_zoom: # Medium 图片缩放效果
+    # mermaid: # Mermaid 流程图库
+    # meting_js: # Meting.js 音乐播放器
+    # prismjs_autoloader: # Prism.js 自动加载器
+    # prismjs_js: # Prism.js 代码高亮库
+    # prismjs_lineNumber_js: # Prism.js 行号显示功能
+    # pjax: # PJAX 页面局部加载
+    # sharejs: # Share.js 分享功能
+    # sharejs_css: # Share.js 样式表文件
+    # snackbar: # 提示条功能
+    # snackbar_css: # 提示条样式表文件
+    # translate: # 翻译功能
+    # twikoo: # Twikoo 评论系统
+    # typed: # Typed.js 打字机效果
+    # utils: # 工具函数文件
+    # valine: # Valine 评论系统
+    # waline_css: # Waline 样式表文件
+    # waline_js: # Waline JavaScript 文件
