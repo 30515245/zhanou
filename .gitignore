@@ -41,3 +41,11 @@ db.json
 
 # 冗余配置（按需）
 _config.butterfly copy 3.yml
+public/
+db.json
+
+# 忽略依赖
+node_modules/
+
+# 忽略临时配置文件
+_config*.yml

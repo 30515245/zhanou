@@ -100,7 +100,9 @@ theme: butterfly # 使用的主题
 # 部署设置
 ## 文档: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: '' # 部署类型
+  type: git
+  repo: git@github.com:30515245/zhanou.git  # 你的新仓库SSH地址
+  branch: main 
 
 search:
   path: search.json # 搜索文件路径
@@ -125,3 +127,4 @@ cloudflare_analytics: |
   <!-- Cloudflare Web Analytics -->
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "be171c5e82a24b278c2200b69bd7c3ae"}'></script>
   <!-- End Cloudflare Web Analytics -->
+ # 或其他分支名（如gh-pages，取决于你的需求）
